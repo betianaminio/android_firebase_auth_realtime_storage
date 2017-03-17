@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_in_form_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="betianaminio.firebaseauthemailandpassword_public.views.SignInActivity">
+
+    <LinearLayout
+        android:id="@+id/sign_in_form_layout_wrapper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/sign_in_form_text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="@string/sign_in_form_title"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_in_form_text_input_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:theme="@style/custom_floating_label_appearance"
+                android:textColorHint="@android:color/white"
+                app:errorTextAppearance="@style/custom_floating_label_error_appearance"
+                app:hintTextAppearance="@style/custom_floating_label_appearance">
+
+                <EditText
+                    android:id="@+id/sign_in_form_edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_in_form_name"
+                    android:inputType="textPersonName"
+                    android:nextFocusDown="@+id/sign_in_form_edit_last_name"
+                    android:textColor="@android:color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_in_form_text_input_lastname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:theme="@style/custom_floating_label_appearance"
+                android:textColorHint="@android:color/white"
+                app:errorTextAppearance="@style/custom_floating_label_error_appearance"
+                app:hintTextAppearance="@style/custom_floating_label_appearance">
+
+                <EditText
+                    android:id="@+id/sign_in_form_edit_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_in_form_last_name"
+                    android:inputType="textPersonName"
+                    android:nextFocusForward="@+id/sign_in_form_edit_email"
+                    android:textColor="@android:color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sign_in_form_text_input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:theme="@style/custom_floating_label_appearance"
+            android:textColorHint="@android:color/white"
+            app:errorTextAppearance="@style/custom_floating_label_error_appearance"
+            app:hintTextAppearance="@style/custom_floating_label_appearance">
+
+            <EditText
+                android:id="@+id/sign_in_form_edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sign_in_form_email"
+                android:inputType="textEmailAddress"
+                android:nextFocusForward="@+id/sign_in_form_edit_password"
+                android:textColor="@android:color/white"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sign_in_form_text_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:passwordToggleEnabled="true"
+            android:theme="@style/custom_floating_label_appearance"
+            android:textColorHint="@android:color/white"
+            app:errorTextAppearance="@style/custom_floating_label_error_appearance"
+            app:hintTextAppearance="@style/custom_floating_label_appearance"
+            app:passwordToggleTint="@android:color/white">
+
+            <EditText
+                android:id="@+id/sign_in_form_edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sign_in_form_password"
+                android:inputType="textPassword"
+                android:nextFocusForward="@+id/sign_in_form_edit_confirm_password"
+                android:textColor="@android:color/white"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sign_in_form_text_input_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:passwordToggleEnabled="true"
+            android:theme="@style/custom_floating_label_appearance"
+            android:textColorHint="@android:color/white"
+            app:errorTextAppearance="@style/custom_floating_label_error_appearance"
+            app:hintTextAppearance="@style/custom_floating_label_appearance"
+            app:passwordToggleTint="@android:color/white">
+
+            <EditText
+                android:id="@+id/sign_in_form_edit_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sign_in_form_confirm_password"
+                android:inputType="textPassword"
+                android:nextFocusForward="@+id/sign_in_form_button_continue"
+                android:textColor="@android:color/white"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_in_form_layout_next_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/sign_in_form_button_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:onClick="onContinueButtonClicked"
+            android:text="@string/sign_in_form_next"
+            style="@style/custom_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sign_in_form_text_view_back" />
+
+        <TextView
+            android:id="@+id/sign_in_form_text_view_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="@string/sign_in_form_back_to_login"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:layout_editor_absoluteY="447dp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/sign_in_form_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_in_form_layout_next_container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:indeterminateTint="@android:color/white"
+        android:indeterminateTintMode="src_in"/>
+
+
+</android.support.constraint.ConstraintLayout>

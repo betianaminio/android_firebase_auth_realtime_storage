@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Firebase Auth</string>
+
+    <string name="login_form_title">Log In</string>
+    <string name="log_in_form_button">Log In</string>
+    <string name="log_in_form_sign_up"><u>Don\'t have an account?. Sign up.</u></string>
+    <string name="login_form_email">Email</string>
+    <string name="log_in_form_password">Password</string>
+    <string name="log_in_form_authenticating">Authenticating&#8230;</string>
+
+    <string name="sign_in_form_title">Sign In</string>
+    <string name="sign_in_form_name">Name</string>
+    <string name="sign_in_form_last_name">Last name</string>
+    <string name="sign_in_form_email">Email</string>
+    <string name="sign_in_form_password">Password</string>
+    <string name="sign_in_form_confirm_password">Confirm password</string>
+    <string name="sign_in_form_create_account">Create account</string>
+    <string name="sign_in_form_back_to_login"><u>Already a member?. Log in.</u></string>
+
+    <string name="sign_in_form_error_name">A name is required</string>
+    <string name="sign_in_form_error_last_name">A last name is required</string>
+    <string name="form_error_email">An email is required</string>
+    <string name="form_error_email_pattern">A valid email is required</string>
+    <string name="form_error_email_in_use">Email already in use. Choose another</string>
+    <string name="form_error_password">A password is required</string>
+    <string name="sign_in_form_error_password_pattern">Password should be of 12 characters</string>
+    <string name="sign_in_form_error_confirm_password">Passwords should be equals</string>
+    <string name="sign_in_form_next">Continue</string>
+
+    <string name="sign_in_form_picture_choose_image">Choose an image profile</string>
+    <string name="sign_in_form_upload_file">Upload</string>
+    <string name="sign_in_form_search_file">Search</string>
+
+    <string name="sign_in_image_gallery_title">Select image</string>
+    <string name="sign_in_image_gallery_error">Unable to open image!</string>
+    <string name="sign_in_picture_form_creating_account">Creating account&#8230;</string>
+    <string name="sign_in_picture_form_content_description">Profile picture</string>
+
+    <string name="main_log_out">Log Out</string>
+    <string name="main_welcome">Welcome</string>
+    <string name="main_user">user</string>
+
+
+    <string name="error_message">An error has occurred</string>
+
+
+</resources>

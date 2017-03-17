@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="custom_button">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/button_state</item>
+    </style>
+
+    <style name="search_button">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:background">@drawable/search_file_button_state</item>
+    </style>
+
+    <style name="custom_floating_label_appearance">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="custom_floating_label_error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>
