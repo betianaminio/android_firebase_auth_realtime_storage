@@ -26,3 +26,6 @@ This is an application that permits a user to sign in using email and password a
 
 # Important note
 If you want to use this project as it, you should create an application in **Firebase Console** and then change the project's package.
+
+# Wiki
+You can find project's explication in the [wiki](https://github.com/betianaminio/android_firebase_auth_realtime_storage/wiki) section.
