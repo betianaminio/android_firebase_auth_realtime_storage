@@ -174,23 +174,21 @@ public class SignInActivity extends Activity {
 
     private boolean isValidPassword(){
 
-        final int PASSWORD_LIMIT_LENGTH = 12;
         final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=\\S+$).{4,}$";
-
-        if ( !isPasswordFieldCompleted() || this.mEditTextPassword.length() < PASSWORD_LIMIT_LENGTH){
-
-            this.mTextInputPassword.setError(getString(R.string.sign_in_form_error_password_pattern));
-            return false;
-
-        }else
-            this.mTextInputPassword.setError(null);
 
         Pattern pattern;
         Matcher matcher;
         pattern = Pattern.compile(PASSWORD_PATTERN);
         matcher = pattern.matcher(this.mEditTextPassword.getText().toString());
 
-        return matcher.matches();
+        if ( !matcher.matches()){
+            this.mTextInputPassword.setError(getString(R.string.sign_in_form_error_password_pattern));
+            return false;
+        }else
+            this.mTextInputPassword.setError(null);
+
+
+        return true;
     }
 
     private boolean arePasswordFieldsEquals(){
@@ -240,10 +238,10 @@ public class SignInActivity extends Activity {
 
         if ( !isPasswordFieldCompleted())
             return false;
-/*
+
         if ( !isValidPassword())
             return false;
-*/
+
         if ( !arePasswordFieldsEquals())
             return false;
 
